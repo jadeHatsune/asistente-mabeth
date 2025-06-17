@@ -1,0 +1,38 @@
+package com.tonala.mabeth.ayuda;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.WindowManager;
+
+import com.tonala.mabeth.R;
+import com.tonala.mabeth.ui.Gestor.GestorNotyActivity;
+import com.tonala.mabeth.ui.Settings.SettingsActivity;
+
+public class GestorAyuda2Activity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_gestor_ayuda2);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        findViewById(R.id.textViewSettingsRegresar).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), AyudaActivity.class));
+                finish();
+            }
+        });
+
+        findViewById(R.id.textViewSettingsProbar).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), GestorNotyActivity.class));
+                finish();
+            }
+        });
+    }
+}

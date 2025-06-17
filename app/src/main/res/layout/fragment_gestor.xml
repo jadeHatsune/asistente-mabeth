@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+    android:background="@drawable/back53"
+android:layout_height="match_parent"
+    android:orientation="vertical"
+tools:context=".ui.Gestor.GestorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="70dp">
+
+    <ImageView
+        android:id="@+id/btnGestorRegresarxd"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:src="@drawable/casa"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/white"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/txtTituloxdddxd"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_weight="3"
+        android:layout_marginStart="32dp"
+        android:text="Tareas"
+        android:layout_gravity="center"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/balsamiqsans_normal"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lbl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/balsamiqsans_normal"
+        android:text="Gestor de tareas"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layoutsemanarioxd"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back52"
+        app:cardCornerRadius="15dp"
+        android:elevation="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutbuscar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toStartOf="@+id/layoutdia"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/scrollView4">
+
+                    <View
+                        android:id="@+id/viewBuscar23"
+                        android:layout_width="140dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/back"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Spinner
+                        android:id="@+id/spFiltAct23"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/viewBuscar23"
+                        app:layout_constraintTop_toTopOf="@+id/viewBuscar23" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/viewBuscar"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/back"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageBuscar"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="14dp"
+                    app:layout_constraintStart_toStartOf="@+id/viewBuscar"
+                    app:layout_constraintTop_toTopOf="@+id/viewBuscar"
+                    app:srcCompat="@drawable/busqueda"
+                    app:tint="#5A5C5F" />
+
+                <EditText
+                    android:id="@+id/txtBuscarTarea"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:fontFamily="@font/balsamiqsans_normal"
+                    android:hint="Buscar"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:includeFontPadding="false"
+                    android:inputType="textPersonName"
+                    android:padding="4dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#5A5C5F"
+                    android:textColorHint="#5A5C5F"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="@+id/viewBuscar"
+                    app:layout_constraintStart_toEndOf="@+id/imageBuscar"
+                    app:layout_constraintTop_toTopOf="@+id/viewBuscar" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layoutsemanarioxd">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutsemanarioxd">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listaEventos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="48dp"
+            android:clipToPadding="false"
+            android:outlineAmbientShadowColor="@color/black"
+            android:paddingStart="0dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutbuscar"
+            tools:ignore="NotSibling" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toStartOf="@+id/layoutdia"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scrollView4">
+
+                <View
+                    android:id="@+id/viewBuscar2"
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/back"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/spFiltAct"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="2dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/viewBuscar2"
+                    app:layout_constraintEnd_toEndOf="@+id/viewBuscar2"
+                    app:layout_constraintStart_toStartOf="@+id/viewBuscar2"
+                    app:layout_constraintTop_toTopOf="@+id/viewBuscar2" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutdia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/back50"
+                android:gravity="end"
+                android:orientation="horizontal"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scrollView4"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight=".1"
+                    android:gravity="right"
+                    android:src="@drawable/agregar"
+                    app:tint="#3333FE" />
+
+                <TextView
+                    android:id="@+id/btnCrearEvento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight=".1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/back50"
+                    android:fontFamily="@font/balsamiqsans_normal"
+                    android:gravity="left"
+                    android:text="Crear Tarea"
+                    android:textColor="#3333FE"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>

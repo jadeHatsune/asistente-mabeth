@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_CrearForo"
+    app:behavior_peekHeight="40dp"
+    android:background="@drawable/backgroundcolor1"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtCrearForo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/hack"
+            android:includeFontPadding="false"
+            android:text="Crear Foro"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtTituloForo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/rajdhani"
+            android:ems="10"
+            android:backgroundTint="@color/white"
+            android:hint="Inserte el titulo aquí"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="17dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtCrearForo"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/txtCuerpoForo"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:fontFamily="@font/rajdhani"
+            android:hint="Inserte el texto aquí"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtTituloForo" />
+
+        <Button
+            android:id="@+id/btnEnviarForo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="ENVIAR"
+            android:background="@drawable/custom_button30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sp02" />
+
+        <Button
+            android:id="@+id/btnCambiarImagenForo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/custom_button30"
+            android:layout_marginBottom="24dp"
+            android:text="Insertar Imagen"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnEnviarForo" />
+
+        <ImageView
+            android:id="@+id/ImagenForo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCuerpoForo" />
+
+        <TextView
+            android:id="@+id/lblsinImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sin imagen"
+            android:textSize="18dp"
+            android:fontFamily="@font/rajdhanibold"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/ImagenForo"
+            app:layout_constraintEnd_toEndOf="@+id/ImagenForo"
+            app:layout_constraintStart_toStartOf="@+id/ImagenForo"
+            app:layout_constraintTop_toTopOf="@+id/ImagenForo" />
+
+        <Spinner
+            android:id="@+id/sp02"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:textColor="#FFF"
+            android:textSize="18dp"
+            android:backgroundTint="@color/white"
+            android:foregroundTintMode="screen"
+            android:ems="10"
+            android:fontFamily="@font/rajdhanibold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ImagenForo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

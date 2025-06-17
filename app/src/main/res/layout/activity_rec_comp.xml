@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back9"
+    tools:context=".ui.Recursos.Computacion.CompActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="-30dp"
+                android:background="@drawable/color6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblCompres">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/viewResElec"
+                android:layout_width="164dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/custom_button13"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout3" />
+
+            <TextView
+                android:id="@+id/txtlblComp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Electrónica"
+                android:textAlignment="center"
+                android:textColor="#E4E3F2"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResElec"
+                app:layout_constraintEnd_toEndOf="@+id/viewResElec"
+                app:layout_constraintStart_toStartOf="@+id/viewResElec"
+                app:layout_constraintTop_toTopOf="@+id/viewResElec" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="83dp"
+                android:layout_height="102dp"
+                android:elevation="7dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes12"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes12"
+                app:layout_constraintStart_toEndOf="@+id/txtlblDiagramas"
+                app:layout_constraintTop_toTopOf="@+id/viewRes12"
+                app:srcCompat="@drawable/infografia" />
+
+            <TextView
+                android:id="@+id/txtlblDiagramas"
+                android:layout_width="214dp"
+                android:layout_height="102dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Diagramas de \nflujo"
+                android:textAlignment="center"
+                android:textColor="#5C5643"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRes12"
+                app:layout_constraintTop_toTopOf="@+id/viewRes12" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="83dp"
+                android:layout_height="102dp"
+                android:elevation="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes11"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes11"
+                app:layout_constraintStart_toEndOf="@+id/txtlblSistemas"
+                app:layout_constraintTop_toTopOf="@+id/viewRes11"
+                app:srcCompat="@drawable/aprender" />
+
+            <TextView
+                android:id="@+id/txtlblSistemas"
+                android:layout_width="214dp"
+                android:layout_height="102dp"
+                android:layout_marginTop="32dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Sistemas de Numeración"
+                android:textAlignment="center"
+                android:textColor="#5E2126"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRes11"
+                app:layout_constraintTop_toTopOf="@+id/viewRes11" />
+
+            <View
+                android:id="@+id/viewRes11"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/custom_button4"
+                android:elevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewRes8" />
+
+            <View
+                android:id="@+id/viewRes12"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/custom_button5"
+                android:elevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewRes11" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="83dp"
+                android:layout_height="102dp"
+                android:elevation="6dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes8"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes8"
+                app:layout_constraintStart_toEndOf="@+id/txtlblDatos"
+                app:layout_constraintTop_toTopOf="@+id/viewRes8"
+                app:srcCompat="@drawable/ensayo" />
+
+            <TextView
+                android:id="@+id/txtlblDatos"
+                android:layout_width="214dp"
+                android:layout_height="102dp"
+                android:layout_marginTop="32dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Estructuras de Datos"
+                android:textAlignment="center"
+                android:textColor="#5F7C5F"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRes8"
+                app:layout_constraintTop_toTopOf="@+id/viewRes8" />
+
+            <View
+                android:id="@+id/viewRes8"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/back10"
+                android:elevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewRes9" />
+
+            <TextView
+                android:id="@+id/lblTitulorescomp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/supercellmagicwebfont"
+                android:text="PROGRAMACIÓN"
+                android:textAlignment="center"
+                android:textColor="#FEF5F8"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/viewRes9"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/back3"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewRes7" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="83dp"
+                android:layout_height="102dp"
+                android:elevation="7dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes9"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes9"
+                app:layout_constraintStart_toEndOf="@+id/txtlblControl"
+                app:layout_constraintTop_toTopOf="@+id/viewRes9"
+                app:srcCompat="@drawable/desarrollo" />
+
+            <TextView
+                android:id="@+id/txtlblControl"
+                android:layout_width="214dp"
+                android:layout_height="102dp"
+                android:layout_marginTop="32dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Estructuras de Control"
+                android:textAlignment="center"
+                android:textColor="#AB7E55"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes9"
+                app:layout_constraintStart_toStartOf="@+id/viewRes9"
+                app:layout_constraintTop_toTopOf="@+id/viewRes9" />
+
+            <TextView
+                android:id="@+id/lblCompres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Introducción a la informática"
+                android:textAlignment="center"
+                android:textColor="#E6E2F4"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblTitulorescomp" />
+
+
+            <View
+                android:id="@+id/viewRes7"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/back7"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewRes6" />
+
+            <TextView
+                android:id="@+id/txtlblcsharp"
+                android:layout_width="195dp"
+                android:layout_height="89dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Lenguaje desarrollado por Microsoft"
+                android:textAlignment="center"
+                android:textColor="#064763"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes7"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes7"
+                app:layout_constraintStart_toEndOf="@+id/txtlblcsharp2"
+                app:layout_constraintTop_toTopOf="@+id/viewRes7" />
+
+            <TextView
+                android:id="@+id/txtlblcsharp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="36dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="C#"
+                android:textAlignment="center"
+                android:textColor="#064763"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRes7"
+                app:layout_constraintTop_toTopOf="@+id/viewRes7" />
+
+            <View
+                android:id="@+id/viewRes6"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/back6"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewRes5" />
+
+            <TextView
+                android:id="@+id/txtlbljava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="36dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="JAVA"
+                android:textAlignment="center"
+                android:textColor="#67806D"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRes6"
+                app:layout_constraintTop_toTopOf="@+id/viewRes6" />
+
+            <TextView
+                android:id="@+id/txtlbljava2"
+                android:layout_width="195dp"
+                android:layout_height="89dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Lenguaje popular en programación"
+                android:textAlignment="center"
+                android:textColor="#67806D"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes6"
+                app:layout_constraintTop_toTopOf="@+id/viewRes6" />
+
+            <View
+                android:id="@+id/viewRes5"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/custom_button7"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewRes3" />
+
+            <TextView
+                android:id="@+id/txtlblcss2"
+                android:layout_width="195dp"
+                android:layout_height="89dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Lenguaje para diseñar páginas web"
+                android:textAlignment="center"
+                android:textColor="#DDDDED"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes5"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes5"
+                app:layout_constraintStart_toEndOf="@+id/txtlblcss"
+                app:layout_constraintTop_toTopOf="@+id/viewRes5" />
+
+            <TextView
+                android:id="@+id/txtlblcss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="36dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="CSS"
+                android:textAlignment="center"
+                android:textColor="#DDDDED"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRes5"
+                app:layout_constraintTop_toTopOf="@+id/viewRes5" />
+
+            <View
+                android:id="@+id/viewRes3"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/custom_button5"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewRes2" />
+
+            <TextView
+                android:id="@+id/txtlblhtml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="36dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="HTML"
+                android:textAlignment="center"
+                android:textColor="#564A4A"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRes3"
+                app:layout_constraintTop_toTopOf="@+id/viewRes3" />
+
+            <TextView
+                android:id="@+id/txtlblhtml2"
+                android:layout_width="182dp"
+                android:layout_height="86dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Lenguaje para crear páginas web"
+                android:textAlignment="center"
+                android:textColor="#564A4A"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes3"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes3"
+                app:layout_constraintStart_toEndOf="@+id/txtlblhtml"
+                app:layout_constraintTop_toTopOf="@+id/viewRes3" />
+
+            <View
+                android:id="@+id/viewRes2"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/custom_button4"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewRes1" />
+
+            <TextView
+                android:id="@+id/txtlblC2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="36dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="C"
+                android:textAlignment="center"
+                android:textColor="#564A4A"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRes2"
+                app:layout_constraintTop_toTopOf="@+id/viewRes2" />
+
+            <TextView
+                android:id="@+id/txtlblC3"
+                android:layout_width="195dp"
+                android:layout_height="89dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Lenguaje de programación general"
+                android:textAlignment="center"
+                android:textColor="#564A4A"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes2"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes2"
+                app:layout_constraintHorizontal_bias="0.759"
+                app:layout_constraintStart_toEndOf="@+id/txtlblC2"
+                app:layout_constraintTop_toTopOf="@+id/viewRes2"
+                app:layout_constraintVertical_bias="0.727" />
+
+            <View
+                android:id="@+id/viewRes1"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/custom_button2"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewResElec" />
+
+            <TextView
+                android:id="@+id/txtlblC1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="36dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="C++"
+                android:textAlignment="center"
+                android:textColor="#DCECE7"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRes1"
+                app:layout_constraintTop_toTopOf="@+id/viewRes1" />
+
+            <TextView
+                android:id="@+id/txtlblCmas"
+                android:layout_width="195dp"
+                android:layout_height="89dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Introducción al lenguaje de programación"
+                android:textAlignment="center"
+                android:textColor="#DCECE7"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes1"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes1"
+                app:layout_constraintStart_toEndOf="@+id/txtlblC1"
+                app:layout_constraintTop_toTopOf="@+id/viewRes1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

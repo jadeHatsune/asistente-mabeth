@@ -1,0 +1,240 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back43"
+    tools:context=".ui.Recursos.Computacion.RecCompu.CmasActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginBottom="-20dp"
+                android:background="@drawable/color8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/txtTextoPor"
+                android:layout_width="339dp"
+                android:layout_height="295dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="La Ley de Modernización de Seguridad Alimentaria (FSMA)cambió las Regulaciones de Inocuidad Alimentaria de FDA. Registrar Corp provee de Inspecciones, Planes de Análisis de Riesgos y Seguridad Alimentaria y asistencia con Planes de Defensa de los Alimentos a compañías de Alimentos, Bebidas y Suplementos Alimenticios."
+                android:textAlignment="center"
+                android:textColor="#F5EFDD"
+                android:textSize="19dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResComp5"
+                app:layout_constraintEnd_toEndOf="@+id/viewResComp5"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp5"
+                app:layout_constraintTop_toBottomOf="@+id/txtTituloSintaxis" />
+
+            <View
+                android:id="@+id/viewResComp5"
+                android:layout_width="383dp"
+                android:layout_height="359dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/back44"
+                android:elevation="6dp"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewResComp2" />
+
+            <TextView
+                android:id="@+id/txtTextoPor3"
+                android:layout_width="355dp"
+                android:layout_height="275dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Las NOM en materia de Prevención y Promoción de la Salud, una vez aprobadas por el Comité Consultivo Nacional de Normalización de Prevención y Control de Enfermedades (CCNNPCE) son expedidas y publicadas en el Diario Oficial de la Federación y, por tratarse de materia sanitaria, entran en vigor al día siguiente de su publicación."
+                android:textAlignment="center"
+                android:textColor="#7D5231"
+                android:textSize="19dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResComp2"
+                app:layout_constraintEnd_toEndOf="@+id/viewResComp2"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp2"
+                app:layout_constraintTop_toBottomOf="@+id/txtTituloPor" />
+
+            <TextView
+                android:id="@+id/txtTituloSintaxis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="FSMA"
+                android:textAlignment="center"
+                android:textColor="#F5EFDD"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp5"
+                app:layout_constraintTop_toTopOf="@+id/viewResComp5" />
+
+            <View
+                android:id="@+id/viewResComp2"
+                android:layout_width="383dp"
+                android:layout_height="360dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/custom_button14"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewResComp1" />
+
+            <TextView
+                android:id="@+id/txtTituloPor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Regulaciones técnicas"
+                android:textAlignment="center"
+                android:textColor="#7D5231"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp2"
+                app:layout_constraintTop_toTopOf="@+id/viewResComp2" />
+
+            <TextView
+                android:id="@+id/txtTextoQue"
+                android:layout_width="357dp"
+                android:layout_height="240dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Las Normas Oficiales Mexicanas (NOM) son regulaciones técnicas de observancia obligatoria expedidas por las dependencias competentes, que tienen como finalidad establecer las características que deben reunir los procesos o servicios cuando estos puedan constituir un riesgo para la seguridad de las personas o dañar la salud humana."
+                android:textAlignment="center"
+                android:textColor="#7D5231"
+                android:textSize="19dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResComp1"
+                app:layout_constraintEnd_toEndOf="@+id/viewResComp1"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp1"
+                app:layout_constraintTop_toBottomOf="@+id/txtTituloQue" />
+
+            <TextView
+                android:id="@+id/txtTituloQue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="¿Qué es?"
+                android:textAlignment="center"
+                android:textColor="#7D5231"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp1"
+                app:layout_constraintTop_toTopOf="@+id/viewResComp1" />
+
+            <View
+                android:id="@+id/viewResComp1"
+                android:layout_width="383dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/custom_button14"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewResVolver" />
+
+            <TextView
+                android:id="@+id/lblCompres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Normas Oficiales Mexicanas"
+                android:textAlignment="center"
+                android:textColor="#7D5231"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/viewResVolver"
+                android:layout_width="164dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/back44"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout3" />
+
+            <TextView
+                android:id="@+id/txtlblC1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="46dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Volver"
+                android:textAlignment="center"
+                android:textColor="#F5EFDD"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResVolver"
+                app:layout_constraintEnd_toEndOf="@+id/viewResVolver"
+                app:layout_constraintStart_toEndOf="@+id/imageView7"
+                app:layout_constraintTop_toTopOf="@+id/viewResVolver" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="41dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="7dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResVolver"
+                app:layout_constraintStart_toStartOf="@+id/viewResVolver"
+                app:layout_constraintTop_toTopOf="@+id/viewResVolver"
+                app:layout_constraintVertical_bias="0.6"
+                app:srcCompat="@drawable/izquier" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

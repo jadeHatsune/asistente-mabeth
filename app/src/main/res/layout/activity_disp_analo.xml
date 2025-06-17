@@ -1,0 +1,261 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back29"
+    tools:context=".ui.Recursos.Electronica.RecElectro.ConcepElecActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="207dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="La electrónica digital utiliza magnitudes con valores discretos, mientras que la electrónica analógica emplea magnitudes con valores continuos."
+                android:textAlignment="center"
+                android:textColor="#543B29"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view19"
+                app:layout_constraintEnd_toStartOf="@+id/animPrinci49"
+                app:layout_constraintStart_toStartOf="@+id/view19"
+                app:layout_constraintTop_toTopOf="@+id/view19" />
+
+            <View
+                android:id="@+id/view19"
+                android:layout_width="383dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="5dp"
+                android:background="@drawable/back2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewResComp1" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animPrinci49"
+                android:layout_width="145dp"
+                android:layout_height="120dp"
+                android:elevation="6dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/view19"
+                app:layout_constraintTop_toTopOf="@+id/view19"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animPrinci48"
+                android:layout_width="171dp"
+                android:layout_height="154dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/lblCompres"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginBottom="-20dp"
+                android:background="@drawable/color6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/txtTextoPor3"
+                android:layout_width="353dp"
+                android:layout_height="280dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Dispositivos analógicos:
+ 	\n-Amplificador operacional.
+\n-Condensador.
+\n-Diodo Zener.
+\n-Inductor.
+	\nDispositivos digitales:
+\n-Biestable.
+\n-Memoria.
+\n-Microcontrolador.
+\n-Puerta lógica.
+"
+                android:textAlignment="center"
+                android:textColor="#234E50"
+                android:textSize="19dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResComp2"
+                app:layout_constraintEnd_toEndOf="@+id/viewResComp2"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp2"
+                app:layout_constraintTop_toBottomOf="@+id/txtTituloPor" />
+
+            <View
+                android:id="@+id/viewResComp2"
+                android:layout_width="386dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/custom_button12"
+                android:elevation="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view19" />
+
+            <TextView
+                android:id="@+id/txtTituloPor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Dispositivos"
+                android:textAlignment="center"
+                android:textColor="#234E50"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp2"
+                app:layout_constraintTop_toTopOf="@+id/viewResComp2" />
+
+            <TextView
+                android:id="@+id/txtTextoQue"
+                android:layout_width="351dp"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Mientras que los dispositivos digitales interpretan los datos con el número cero o el uno (lo que se llama sistema binario), un dispositivo analógico lee los datos analizando el medio físico y traduciéndolo en un sonido o una imagen."
+                android:textAlignment="center"
+                android:textColor="#234E50"
+                android:textSize="19dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResComp1"
+                app:layout_constraintEnd_toEndOf="@+id/viewResComp1"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp1"
+                app:layout_constraintTop_toBottomOf="@+id/txtTituloQue" />
+
+            <TextView
+                android:id="@+id/txtTituloQue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Concepto"
+                android:textAlignment="center"
+                android:textColor="#234E50"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp1"
+                app:layout_constraintTop_toTopOf="@+id/viewResComp1" />
+
+            <View
+                android:id="@+id/viewResComp1"
+                android:layout_width="384dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/custom_button12"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewResVolver" />
+
+            <TextView
+                android:id="@+id/lblCompres"
+                android:layout_width="207dp"
+                android:layout_height="141dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Dispositivos Analógicos y digitales"
+                android:textAlignment="center"
+                android:textColor="#234E50"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/viewResVolver"
+                android:layout_width="164dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/back30"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout3" />
+
+            <TextView
+                android:id="@+id/txtlblC1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="46dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Volver"
+                android:textAlignment="center"
+                android:textColor="#DBF0F1"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResVolver"
+                app:layout_constraintEnd_toEndOf="@+id/viewResVolver"
+                app:layout_constraintStart_toEndOf="@+id/imageView7"
+                app:layout_constraintTop_toTopOf="@+id/viewResVolver" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="41dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="7dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResVolver"
+                app:layout_constraintStart_toStartOf="@+id/viewResVolver"
+                app:layout_constraintTop_toTopOf="@+id/viewResVolver"
+                app:layout_constraintVertical_bias="0.6"
+                app:srcCompat="@drawable/izquier" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

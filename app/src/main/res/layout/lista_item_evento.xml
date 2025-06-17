@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layouteventos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginStart="12dp"
+    android:background="@drawable/backgroundcolor4"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblTituloListaNoty"
+                    android:layout_width="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight=".7"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/balsamiqsans_normal"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/lblFechaListaNoty"
+                    android:layout_width="wrap_content"
+                    android:layout_weight=".1"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="8dp"
+                    android:textSize="12dp"
+                    android:gravity="right"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/hack"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/lblHoraListaNoty"
+                    android:layout_width="wrap_content"
+                    android:gravity="right"
+                    android:layout_weight=".1"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="12dp"
+                    android:textSize="12dp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/hack"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblCuerpoListaNoty"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="8dp"
+            android:textSize="16dp"
+            android:textColor="#E1E1E8"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/rajdhani"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+
+        <TextView
+            android:id="@+id/lblEstadoListaNoty"
+            android:layout_width="match_parent"
+            android:textSize="14dp"
+            android:textColor="#F5A714"
+            android:textStyle="italic"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/balsamiqsans_normal"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>

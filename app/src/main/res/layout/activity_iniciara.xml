@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color3"
+    tools:context=".Inicio.iniciara">
+
+
+    <Button
+        android:id="@+id/btnLogin2"
+        android:layout_width="270dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/balsamiqsans_normal"
+        android:onClick="Siguiente"
+        android:text="Siguiente"
+        android:textSize="18dp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblBien2" />
+
+    <TextView
+        android:id="@+id/lblAsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/balsamiqsans_normal"
+        android:text="Asistente Mabeth"
+        android:textAlignment="center"
+        android:textColor="#5F6571"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animRoboto" />
+
+    <TextView
+        android:id="@+id/lblBien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/balsamiqsans_normal"
+        android:text="Bienvenido"
+        android:textAlignment="center"
+        android:textColor="#5F6571"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAsis" />
+
+    <TextView
+        android:id="@+id/lblBien2"
+        android:layout_width="349dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/balsamiqsans_normal"
+        android:text="Asistente Mabeth es una aplicación simple para la organización y control de un ambiente estudiantil..."
+        android:textAlignment="center"
+        android:textColor="#5F6571"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblBien" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animRoboto"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/robot" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

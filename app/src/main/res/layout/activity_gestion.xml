@@ -1,0 +1,280 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back16"
+    tools:context=".ui.Recursos.Computacion.RecCompu.CmasActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginBottom="-80dp"
+                android:background="@drawable/color8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="217dp"
+                android:layout_height="79dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Es un conjunto de elementos que interactúan para establecer políticas, objetivos y procesos para lograr objetivos."
+                android:textAlignment="center"
+                android:textColor="#284932"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/view18"
+                app:layout_constraintEnd_toStartOf="@+id/animPrinci2"
+                app:layout_constraintStart_toStartOf="@+id/view18"
+                app:layout_constraintTop_toBottomOf="@+id/viewResComp1" />
+
+            <View
+                android:id="@+id/view18"
+                android:layout_width="383dp"
+                android:layout_height="127dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/custom_button11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewResComp1" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animPrinci2"
+                android:layout_width="144dp"
+                android:layout_height="123dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/view18"
+                app:layout_constraintTop_toTopOf="@+id/view18"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+
+            <TextView
+                android:id="@+id/txtTextoPor"
+                android:layout_width="344dp"
+                android:layout_height="345dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="1.Enfoque al cliente. \n2. Liderazgo. \n3.Participación del personal. \n4. Enfoque basado en procesos.\n5. Enfoque de sistema para la gestión.\n6. Mejora continua \n7. Enfoque basado en hechos para la toma de decisión.\n8. Relaciones mutuamente beneficiosas con el proveedor.
+"
+                android:textAlignment="center"
+                android:textColor="#284932"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResComp5"
+                app:layout_constraintEnd_toEndOf="@+id/viewResComp5"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp5"
+                app:layout_constraintTop_toBottomOf="@+id/txtTituloSintaxis" />
+
+            <View
+                android:id="@+id/viewResComp5"
+                android:layout_width="390dp"
+                android:layout_height="430dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/custom_button11"
+                android:elevation="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTextoPor3" />
+
+            <TextView
+                android:id="@+id/txtTextoPor3"
+                android:layout_width="355dp"
+                android:layout_height="235dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="La familia de normas ISO 9000 está fundamentada en ocho principios de gestión de calidad, su finalidad es dirigir a las organizaciones al éxito. Para ello se enfocan principalmente al cliente y a la mejora continua."
+                android:textAlignment="center"
+                android:textColor="#284932"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResComp2"
+                app:layout_constraintEnd_toEndOf="@+id/viewResComp2"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp2"
+                app:layout_constraintTop_toBottomOf="@+id/txtTituloPor" />
+
+            <TextView
+                android:id="@+id/txtTituloSintaxis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="principios de gestión \nde calidad"
+                android:textAlignment="center"
+                android:textColor="#284932"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp5"
+                app:layout_constraintTop_toTopOf="@+id/viewResComp5" />
+
+            <View
+                android:id="@+id/viewResComp2"
+                android:layout_width="383dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/custom_button11"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view18" />
+
+            <TextView
+                android:id="@+id/txtTituloPor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Principios de Gestión \nde la Calidad"
+                android:textAlignment="center"
+                android:textColor="#284932"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp2"
+                app:layout_constraintTop_toTopOf="@+id/viewResComp2" />
+
+            <TextView
+                android:id="@+id/txtTextoQue"
+                android:layout_width="357dp"
+                android:layout_height="223dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Un Sistema de Gestión de Calidad o también conocido como SGC, es una herramienta perfecta para aquellas organizaciones que desean que sus productos y servicios cumplan con los máximos estándares de calidad y así lograr y mantener la satisfacción de sus clientes."
+                android:textAlignment="center"
+                android:textColor="#284932"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResComp1"
+                app:layout_constraintEnd_toEndOf="@+id/viewResComp1"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp1"
+                app:layout_constraintTop_toBottomOf="@+id/txtTituloQue" />
+
+            <TextView
+                android:id="@+id/txtTituloQue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="¿Qué es?"
+                android:textAlignment="center"
+                android:textColor="#284932"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp1"
+                app:layout_constraintTop_toTopOf="@+id/viewResComp1" />
+
+            <View
+                android:id="@+id/viewResComp1"
+                android:layout_width="383dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/custom_button11"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewResVolver" />
+
+            <TextView
+                android:id="@+id/lblCompres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Sistemas de Gestión de Calidad."
+                android:textAlignment="center"
+                android:textColor="#E0F1E5"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/viewResVolver"
+                android:layout_width="164dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/back46"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout3" />
+
+            <TextView
+                android:id="@+id/txtlblC1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="46dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Volver"
+                android:textAlignment="center"
+                android:textColor="#E8F5EC"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResVolver"
+                app:layout_constraintEnd_toEndOf="@+id/viewResVolver"
+                app:layout_constraintStart_toEndOf="@+id/imageView7"
+                app:layout_constraintTop_toTopOf="@+id/viewResVolver" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="41dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="7dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResVolver"
+                app:layout_constraintStart_toStartOf="@+id/viewResVolver"
+                app:layout_constraintTop_toTopOf="@+id/viewResVolver"
+                app:layout_constraintVertical_bias="0.6"
+                app:srcCompat="@drawable/izquier" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

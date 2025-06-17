@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Mabeth</string>
+    <string name="title_activity_menu_slide">MenuSlideActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Nombre</string>
+    <string name="nav_header_subtitle">Correo</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="api_maps">AIzaSyDhwcXfvVkkaLeYs9V8cTuDq0jN7scIrQ4</string>
+
+    <string name="volver"><![CDATA[<-]]></string>
+    <string name="irHaciaDelante"><![CDATA[->]]></string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="changed_to">Alarma cambiada a las %s</string>
+    <string name="SERVICE">SERVICE</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

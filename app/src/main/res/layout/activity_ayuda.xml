@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ayuda.AyudaActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/atrasset"
+            android:layout_width="40dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="12dp"
+            app:backgroundTint="@color/black"
+            android:src="@drawable/izquierdo"
+            android:textStyle="bold"
+            android:background="@null"
+            app:tint="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/lblTitulosettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/balsamiqsans_normal"
+            android:text="Categorías"
+            android:textColor="#797981"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutcalendar"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <View
+                android:id="@+id/viewCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/backgroundcolor2"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></View>
+
+            <TextView
+                android:id="@+id/lblTituloCalendario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rajdhanibold"
+                android:text="Calendario"
+                android:textColor="@color/white"
+                android:elevation="12dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewCalendar"
+                app:layout_constraintTop_toTopOf="@+id/viewCalendar" />
+
+            <TextView
+                android:id="@+id/lblExpandirCal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:elevation="12dp"
+                android:fontFamily="@font/rajdhanibold"
+                android:text="Expandir Todo"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewCalendar"
+                app:layout_constraintTop_toBottomOf="@+id/lblTituloCalendario" />
+
+            <ImageView
+                android:id="@+id/imgCalendar"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_weight=".2"
+                android:background="@null"
+                android:elevation="12dp"
+                android:src="@drawable/calendarioset"
+                android:textStyle="bold"
+                app:backgroundTint="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/viewCalendar"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutgestor"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <View
+                android:id="@+id/viewGestor"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/backgroundcolor4"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></View>
+
+            <TextView
+                android:id="@+id/lblTituloGestor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="12dp"
+                android:fontFamily="@font/rajdhanibold"
+                android:text="Gestor de Tareas"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/viewGestor"
+                app:layout_constraintTop_toTopOf="@+id/viewGestor" />
+
+            <TextView
+                android:id="@+id/lblExpandirGestor"
+                android:layout_width="83dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="12dp"
+                android:fontFamily="@font/rajdhanibold"
+                android:text="Expandir Todo"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/viewGestor"
+                app:layout_constraintTop_toBottomOf="@+id/lblTituloGestor" />
+
+            <ImageView
+                android:id="@+id/imgGestor"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight=".2"
+                android:background="@null"
+                android:elevation="12dp"
+                android:src="@drawable/riesgo"
+                android:textStyle="bold"
+                app:backgroundTint="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/viewGestor"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutNotas"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <View
+                android:id="@+id/viewNotas"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/backgroundcolor3"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></View>
+
+            <TextView
+                android:id="@+id/lblTituloNotas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rajdhanibold"
+                android:text="Notas"
+                android:textColor="@color/white"
+                android:elevation="12dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewNotas"
+                app:layout_constraintTop_toTopOf="@+id/viewNotas" />
+
+            <TextView
+                android:id="@+id/lblExpandirNotas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:elevation="12dp"
+                android:fontFamily="@font/rajdhanibold"
+                android:text="Expandir Todo"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewNotas"
+                app:layout_constraintTop_toBottomOf="@+id/lblTituloNotas" />
+
+            <ImageView
+                android:id="@+id/imgNotas"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight=".2"
+                android:background="@null"
+                android:elevation="12dp"
+                android:src="@drawable/publicalo"
+                android:textStyle="bold"
+                app:backgroundTint="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/viewNotas"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutForos"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <View
+                android:id="@+id/viewForos"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/backgroundcolor5"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></View>
+
+            <TextView
+                android:id="@+id/lblTituloForos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="12dp"
+                android:fontFamily="@font/rajdhanibold"
+                android:text="Foros"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/viewForos"
+                app:layout_constraintTop_toTopOf="@+id/viewForos" />
+
+            <TextView
+                android:id="@+id/lblExpandirForos"
+                android:layout_width="83dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="12dp"
+                android:fontFamily="@font/rajdhanibold"
+                android:text="Expandir Todo"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/viewForos"
+                app:layout_constraintTop_toBottomOf="@+id/lblTituloForos" />
+
+            <ImageView
+                android:id="@+id/imgForos"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight=".2"
+                android:background="@null"
+                android:elevation="12dp"
+                android:src="@drawable/globos"
+                android:textStyle="bold"
+                app:backgroundTint="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/viewForos"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutRecursos"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <View
+                android:id="@+id/viewRecursos"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/backgroundcolor6"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></View>
+
+            <TextView
+                android:id="@+id/lblTituloRecursos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rajdhanibold"
+                android:text="Recursos"
+                android:textColor="@color/white"
+                android:elevation="12dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRecursos"
+                app:layout_constraintTop_toTopOf="@+id/viewRecursos" />
+
+            <TextView
+                android:id="@+id/lblExpandirRecursos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:elevation="12dp"
+                android:fontFamily="@font/rajdhanibold"
+                android:text="Expandir Todo"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRecursos"
+                app:layout_constraintTop_toBottomOf="@+id/lblTituloRecursos" />
+
+            <ImageView
+                android:id="@+id/imgRecursos"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight=".2"
+                android:background="@null"
+                android:elevation="12dp"
+                android:src="@drawable/infolibro"
+                android:textStyle="bold"
+                app:backgroundTint="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/viewRecursos"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutMapa"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <View
+                android:id="@+id/viewMapa"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/backgroundcolor7"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></View>
+
+            <TextView
+                android:id="@+id/lblTituloMapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="12dp"
+                android:fontFamily="@font/rajdhanibold"
+                android:text="Ruta"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/viewMapa"
+                app:layout_constraintTop_toTopOf="@+id/viewMapa" />
+
+            <TextView
+                android:id="@+id/lblExpandirMapa"
+                android:layout_width="83dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="12dp"
+                android:fontFamily="@font/rajdhanibold"
+                android:text="Expandir Todo"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/viewMapa"
+                app:layout_constraintTop_toBottomOf="@+id/lblTituloMapa" />
+
+            <ImageView
+                android:id="@+id/imgMapa"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight=".2"
+                android:background="@null"
+                android:elevation="12dp"
+                android:src="@drawable/mapageo"
+                android:textStyle="bold"
+                app:backgroundTint="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/viewMapa"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

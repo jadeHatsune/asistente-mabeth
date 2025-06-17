@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutcolores2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgroundcolor1"
+    android:orientation="vertical"
+    app:behavior_peekHeight="40dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <TextView
+        android:id="@+id/txtcolores2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="@font/hack"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="Más opciones"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layouteventoColor"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_margin="10sp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcolores"
+        tools:layout_editor_absoluteX="10dp">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/Color1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/backgroundnotecolor6" />
+
+            <ImageView
+                android:id="@+id/ImageColor1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_check"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:ignore="Suspicious0dp">
+
+            <View
+                android:id="@+id/Color2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/backgroundnotecolor7" />
+
+            <ImageView
+                android:id="@+id/ImageColor2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="10dp"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:ignore="Suspicious0dp">
+
+            <View
+                android:id="@+id/Color3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/backgroundnotecolor3" />
+
+            <ImageView
+                android:id="@+id/ImageColor3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="10dp"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:ignore="Suspicious0dp">
+
+            <View
+                android:id="@+id/Color4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/backgroundnotecolor8" />
+
+            <ImageView
+                android:id="@+id/ImageColor4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="10dp"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:ignore="Suspicious0dp">
+
+            <View
+                android:id="@+id/Color5"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/backgroundnotecolor9" />
+
+            <ImageView
+                android:id="@+id/ImageColor5"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="10dp"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/balsamiqsans_normal"
+            android:includeFontPadding="false"
+            android:text="Selecciona un color"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

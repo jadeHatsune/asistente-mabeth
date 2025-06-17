@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Calendario.EventoEditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="60dp" >
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_marginStart="16dp"
+            android:layout_height="22dp"
+            android:id="@+id/casaxd2"
+            android:layout_weight=".2"
+            app:backgroundTint="@color/white"
+            android:background="@null"
+            android:src="@drawable/casa"
+            app:tint="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/txtCalendario2"
+            android:layout_width="2dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:text="Crear nuevo evento"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/balsamiqsans_normal"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layoutevento2"
+        android:layout_height="match_parent"
+        android:background="@drawable/back52"
+        app:cardCornerRadius="15dp"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/txtNombrexd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:text="Nombre"
+            android:fontFamily="@font/balsamiqsans_normal"
+            android:textSize="18dp"
+            android:textColor="#707078"
+            app:layout_constraintTop_toTopOf="@+id/layoutevento2"
+            app:layout_constraintStart_toStartOf="@+id/layoutevento2" />
+
+        <EditText
+            android:id="@+id/eventNameET2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/balsamiqsans_normal"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/black"
+            android:hint="Escribe el nombre"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@+id/txtNombrexd2"
+            app:layout_constraintStart_toStartOf="@+id/layoutevento2" />
+
+        <TextView
+            android:id="@+id/txtFechaxd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Fecha"
+            android:fontFamily="@font/rajdhanibold"
+            android:textSize="18dp"
+            android:textColor="#707078"
+            app:layout_constraintTop_toBottomOf="@id/eventNameET2"
+            app:layout_constraintStart_toStartOf="@+id/layoutevento2" />
+
+
+        <LinearLayout
+            android:id="@+id/layoutsemana2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back50"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:backgroundTint="@null"
+            app:layout_constraintTop_toBottomOf="@+id/txtFechaxd2"
+            app:layout_constraintStart_toStartOf="@id/layoutevento2"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/calendario5"
+                app:tint="#3333FE" />
+
+            <TextView
+                android:id="@+id/eventDateTV2"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/rajdhanibold"
+                android:text="Fecha"
+                android:textColor="#707078"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtHoraxd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Hora del evento"
+            android:fontFamily="@font/rajdhanibold"
+            android:textSize="18dp"
+            android:textColor="#707078"
+            app:layout_constraintTop_toBottomOf="@id/layoutsemana2"
+            app:layout_constraintStart_toStartOf="@+id/layoutevento2" />
+
+        <LinearLayout
+            android:id="@+id/evento2"
+            android:background="@drawable/backgroundcolor4"
+            android:layout_marginEnd="16dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtHoraxd2">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/reloj2"
+                android:layout_marginEnd="8dp"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/txtEventoHora2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/rajdhanibold"
+                android:text="Cambiar Hora"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtHoraxd2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layouthora2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:backgroundTint="@null"
+            app:layout_constraintTop_toBottomOf="@+id/evento2"
+            app:layout_constraintStart_toStartOf="@id/layoutevento2"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/reloj3"
+                app:tint="#3333FE" />
+
+            <TextView
+                android:id="@+id/eventTimeTV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Hora"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/rajdhanibold"
+                android:textSize="18dp"
+                android:textColor="#707078"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/custom_button30"
+            android:elevation="10dp"
+            android:fontFamily="@font/rajdhanibold"
+            android:text="Eliminar Evento"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layouthora2"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/custom_button30"
+            android:elevation="10dp"
+            android:fontFamily="@font/rajdhanibold"
+            android:id="@+id/btnCrearEv"
+            android:text="Guardar Evento"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnEliminar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

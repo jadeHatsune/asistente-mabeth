@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutAddUrlContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@drawable/background_dialog2">
+
+    <ImageView
+        android:id="@+id/imageAddURL"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:contentDescription="Mabeth"
+        android:src="@drawable/url"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewAddURL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/balsamiqsans_normal"
+        android:includeFontPadding="false"
+        android:textStyle="bold"
+        android:text="Añadir URL"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/imageAddURL"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputURL"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="8dp"
+        android:background="@null"
+        android:fontFamily="@font/balsamiqsans_normal"
+        android:gravity="center_vertical"
+        android:hint="Ingresa la URL"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:includeFontPadding="false"
+        android:inputType="textUri"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="#9C9C9C"
+        app:layout_constraintTop_toBottomOf="@id/imageAddURL"/>
+
+    <TextView
+        android:id="@+id/txtAgregar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/balsamiqsans_normal"
+        android:includeFontPadding="false"
+        android:text="AÑADIR"
+        android:textColor="#D2C44C"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputURL" />
+
+    <TextView
+        android:id="@+id/txtCancelar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/balsamiqsans_normal"
+        android:includeFontPadding="false"
+        android:text="CANCELAR"
+        android:textColor="#D2C44C"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtAgregar"
+        app:layout_constraintTop_toBottomOf="@+id/inputURL" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back53"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    tools:context=".ui.Settings.SettingsActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/lblTitulosettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/balsamiqsans_normal"
+                    android:text="Perfil"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgPerfilUsuSett"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="24dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.106"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <TextView
+                        android:id="@+id/txtNombreUsuSett"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="32dp"
+                        android:text="Nombre"
+                        android:textAlignment="center"
+                        android:textColor="#E6E2F4"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lblTell" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:id="@+id/layoutsettings"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="left"
+                android:background="@drawable/back52"
+                app:cardCornerRadius="15dp"
+                android:elevation="10dp">
+
+                <TextView
+                    android:id="@+id/textViewSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/balsamiqsans_normal"
+                    android:text="Configuración de perfil"
+                    android:textColor="#888890"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/layoutsettings"/>
+
+                <LinearLayout
+                    android:id="@+id/layoutcontra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layoutnombre" >
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="26dp"
+                        android:layout_weight=".14"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="18dp"
+                        app:backgroundTint="@color/black"
+                        android:src="@drawable/retrato"
+                        android:textStyle="bold"
+                        android:background="@null"
+                        app:tint="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:layout_marginTop="18dp"
+                        android:fontFamily="@font/balsamiqsans_normal"
+                        android:text="Cambiar imagen de perfil"
+                        android:textColor="#686868"
+                        android:textSize="20dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="26dp"
+                        android:layout_weight=".1"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginEnd="20dp"
+                        app:backgroundTint="@color/black"
+                        android:src="@drawable/derecho"
+                        android:textStyle="bold"
+                        android:background="@null"
+                        app:tint="@color/black"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutnombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSettings" >
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="26dp"
+                        android:layout_weight=".2"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="18dp"
+                        app:backgroundTint="@color/black"
+                        android:src="@drawable/usuario"
+                        android:textStyle="bold"
+                        android:background="@null"
+                        app:tint="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtCambiarNombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:layout_marginTop="18dp"
+                        android:fontFamily="@font/balsamiqsans_normal"
+                        android:text="Editar nombre de usuario"
+                        android:textColor="#686868"
+                        android:textSize="20dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="26dp"
+                        android:layout_weight=".1"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        app:backgroundTint="@color/black"
+                        android:src="@drawable/derecho"
+                        android:textStyle="bold"
+                        android:background="@null"
+                        app:tint="@color/black"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lblsetTemas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/balsamiqsans_normal"
+                    android:text="Cambiar temas de interés"
+                    android:textAlignment="center"
+                    android:textColor="#686868"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layoutcontra" />
+
+                <CheckBox
+                    android:id="@+id/chQuimset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:checked="true"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/balsamiqsans_normal"
+                    android:text="Quimica"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblsetTemas" />
+
+                <CheckBox
+                    android:id="@+id/chCompset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:checked="true"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/balsamiqsans_normal"
+                    android:text="Electrónica / Computación"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chQuimset" />
+
+                <CheckBox
+                    android:id="@+id/chCaliset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:checked="true"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/balsamiqsans_normal"
+                    android:text="Calidad y productividad"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chCompset" />
+
+                <Button
+                    android:id="@+id/btnsetGuardar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/custom_button30"
+                    android:fontFamily="@font/balsamiqsans_normal"
+                    android:text="Guardar Cambios"
+                    android:textSize="16dp"
+                    app:backgroundTint="@null"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chCaliset" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

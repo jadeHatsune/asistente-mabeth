@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color4"
+    android:orientation="vertical"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    tools:context=".ui.Notas.NotasTextoActivity"
+>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="false">
+
+
+            <EditText
+                android:id="@+id/txtTituloTexto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@android:color/transparent"
+                android:ems="10"
+                android:textSize="25dp"
+                android:hint="Titulo"
+                android:textStyle="bold"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:inputType="textPersonName"
+                android:padding="4dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnGRegresar4" />
+
+            <View
+                android:id="@+id/viewColorcitoxd"
+                android:layout_width="10dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="#EDA65F"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTituloTexto" />
+
+            <ImageView
+                android:id="@+id/imageNote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="16dp"
+                android:adjustViewBounds="true"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtFecha2" />
+
+            <LinearLayout
+                android:id="@+id/layoutWebURL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                 android:visibility="gone"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/imageNote">
+
+                <TextView
+                    android:id="@+id/textWebURL"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:autoLink="web"
+                    android:fontFamily="@font/hack"
+                    android:includeFontPadding="false"
+                    android:textColor="#B9C5F1"
+                    android:textSize="15dp"/>
+
+                <ImageView
+                    android:id="@+id/imageRemoveURL"
+                    android:layout_width="45dp"
+                    android:layout_height="36dp"
+                    android:padding="4dp"
+                    android:src="@drawable/basura2"
+                    app:tint="#EC5F5F" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageRemoveImage"
+                android:layout_width="30dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/backgroundcolor3"
+                android:padding="4dp"
+                android:src="@drawable/basura"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/imageNote"
+                app:layout_constraintTop_toTopOf="@id/imageNote"
+                app:tint="@color/white" />
+
+
+            <ImageButton
+                android:id="@+id/btnGRegresar4"
+                android:layout_width="57dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/deshacer"
+                app:tint="#F3EDF2" />
+
+            <ImageButton
+                android:id="@+id/btnGuardar"
+                android:layout_width="58dp"
+                android:layout_height="44dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/custom_button2"
+                app:backgroundTint="#F3EDF2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_check"
+                app:tint="@color/black" />
+
+            <EditText
+                android:id="@+id/txtCuerpoTexto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Escriba aquí"
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutWebURL" />
+
+            <TextView
+                android:id="@+id/txtFecha2"
+                android:layout_width="282dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:text=""
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintStart_toEndOf="@+id/viewColorcitoxd"
+                app:layout_constraintTop_toBottomOf="@+id/txtTituloTexto" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+    <include layout="@layout/layoutcolores" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

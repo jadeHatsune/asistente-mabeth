@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="#E6E2F4"
+    tools:showIn="navigation_view"
+    tools:context=".ui.MenuSlideActivity">
+
+    <group android:checkableBehavior="single" android:id="@+id/grupo_usuario">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:iconTint="#4E59CB"
+            android:title="Menú Principal" />
+        <item
+            android:id="@+id/nav_Recursos"
+            android:icon="@drawable/ic_recursos"
+            android:iconTint="#4E59CB"
+            android:title="Recursos" />
+        <item
+            android:id="@+id/nav_Calendar"
+            android:icon="@drawable/ic_calendar"
+            android:iconTint="#4E59CB"
+            android:title="Calendario" />
+        <item
+            android:id="@+id/nav_Gestor"
+            android:icon="@drawable/ic_baseline_event_note_24"
+            android:iconTint="#4E59CB"
+            android:title="Gestor de actividades"/>
+        <item
+            android:id="@+id/nav_notas"
+            android:icon="@drawable/ic_note"
+            android:iconTint="#4E59CB"
+            android:title="Notas"/>
+        <item
+            android:id="@+id/nav_foros"
+            android:icon="@drawable/ic_foro"
+            android:iconTint="#4E59CB"
+            android:title="Foros"/>
+        <item
+            android:id="@+id/nav_gps"
+            android:icon="@drawable/ic_gps"
+            android:iconTint="#4E59CB"
+            android:title="Ruta"/>
+
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/grupo_admin" android:visible="false" android:enabled="false">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_home"
+            android:iconTint="#4E59CB"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_userAd"
+            android:icon="@drawable/ic_users"
+            android:iconTint="#4E59CB"
+            android:title="Usuarios" />
+        <item
+            android:id="@+id/nav_adminAd"
+            android:icon="@drawable/ic_admin"
+            android:iconTint="#4E59CB"
+            android:title="Administración" />
+    </group>
+</menu>

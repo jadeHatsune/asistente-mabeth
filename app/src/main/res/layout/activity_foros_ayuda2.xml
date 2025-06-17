@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgroundcolor8"
+    android:orientation="vertical"
+    tools:context=".ayuda.CalendarioAyudaActivity">
+
+    <ScrollView
+        android:id="@+id/scrollViewCal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgGestor2Set"
+                    android:layout_width="250dp"
+                    android:layout_height="280dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@null"
+                    android:elevation="12dp"
+                    android:src="@drawable/foroayuda2"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutsettings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                app:layout_constraintBottom_toBottomOf="@+id/scrollViewCall"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/back52"
+                android:elevation="10dp">
+
+                <TextView
+                    android:id="@+id/textViewSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/rajdhanibold"
+                    android:text="Crear Foro"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/layoutsettings" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSettings">
+
+                    <TextView
+                        android:id="@+id/textViewSettingsActi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="18dp"
+                        android:fontFamily="@font/balsamiqsans_normal"
+                        android:gravity="left"
+                        android:text="Deberá de ingresar un título y una descripción del foro para dar a entender mejor su pregunta."
+                        android:textColor="#716F76"
+                        android:textSize="15dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewSettings" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewSettingsActi2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/balsamiqsans_normal"
+                            android:gravity="left"
+                            android:text="Insertar Imagen:"
+                            android:textStyle="bold"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textViewSettingsActi3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:fontFamily="@font/balsamiqsans_normal"
+                            android:gravity="left"
+                            android:layout_marginEnd="16dp"
+                            android:text="De click en el botón de Insertar Imagen para poder seleccionar una imagen de su galería."
+                            android:textColor="#716F76"
+                            android:textSize="15dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewSettingsActiHora"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/balsamiqsans_normal"
+                            android:gravity="left"
+                            android:text="Temas:"
+                            android:textStyle="bold"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textViewSettingsActiHora2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:fontFamily="@font/balsamiqsans_normal"
+                            android:gravity="left"
+                            android:layout_marginEnd="16dp"
+                            android:text="Podrá cambiar el tema de su pregunta, para que el usuario pueda filtrar cuáles son sus temas más importantes."
+                            android:textColor="#716F76"
+                            android:textSize="15dp"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textViewSettingsActi4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/balsamiqsans_normal"
+                        android:gravity="left"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="Finalmente publica tu pregunta, dando click en el botón de Enviar."
+                        android:textColor="#716F76"
+                        android:textSize="15dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewSettingsActi9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/balsamiqsans_normal"
+                        android:gravity="left"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="Si deseas leer sobre las respuestas, da click en Seguir Leyendo."
+                        android:textColor="#716F76"
+                        android:textSize="15dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewSettingsSiguienteFor2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rajdhanibold"
+                        android:textAlignment="viewEnd"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="32dp"
+                        android:text="Seguir Leyendo"
+                        android:textColor="#3B43E5"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/textViewSettingsRegresar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rajdhanibold"
+                        android:textAlignment="viewEnd"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="32dp"
+                        android:text="Regresar al Menú"
+                        android:textColor="#3B43E5"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

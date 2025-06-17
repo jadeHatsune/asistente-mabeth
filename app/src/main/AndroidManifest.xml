@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tonala.mabeth">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo3"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mabeth"
+        tools:targetApi="q">
+        <activity
+            android:name=".EliminarForoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Settings.CambiarContraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IniciarSes.RecuperarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Calendario.EventoEditActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Settings.EditarAparienciaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Settings.EditarPerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ayuda.RecursosAyudaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ayuda.ForosAyuda3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ayuda.ForosAyuda2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ayuda.ForosAyudaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ayuda.NotasAyuda3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ayuda.NotasAyuda2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ayuda.NotasAyudaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ayuda.GestorAyuda2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ayuda.GestorAyudaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ayuda.CalendarioAyuda2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ayuda.CalendarioAyudaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ayuda.AyudaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Foros.RespForoActivity"
+            android:exported="false" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ui.Gestor.EditarEventoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Gestor.GestorNotyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Notas.ListaNotasTextoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Notas.ListaNotasVozActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Notas.NotasTextoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Notas.LeerNotaVozActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Notas.NotaVozActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Inicio.errorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Admin.UserDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Electronica.RecElectro.SenElecActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Electronica.RecElectro.SisElecActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Electronica.RecElectro.TensionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Electronica.RecElectro.UnidMedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Electronica.RecElectro.ValorFormOndaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Electronica.RecElectro.ConcepElecActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Electronica.RecElectro.DispAnaloActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Electronica.RecElectro.LeyOhmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Electronica.ElectroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Quimica.RecQuim.FarmacopeaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Quimica.RecQuim.FarmacosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Quimica.RecQuim.AlimentosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Quimica.RecQuim.NomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Quimica.RecQuim.CodexAlimentariusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Quimica.RecQuim.IndustrialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Quimica.RecQuim.ElementosTablaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Quimica.RecQuim.FDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Calidad.RecCalidad.Gestion"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Calidad.RecCalidad.Normalizacion"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Calidad.RecCalidad.Metrologia"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Calidad.RecCalidad.Brainstorming"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Calidad.RecCalidad.Pareto"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Calidad.RecCalidad.CausaEfec"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Calidad.RecCalidad.Procesos"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Calidad.RecCalidad.Calidad"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Computacion.RecCompu.DiagraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Computacion.RecCompu.NumeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Computacion.RecCompu.DatosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Computacion.RecCompu.ControlActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Computacion.RecCompu.CssActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Computacion.RecCompu.JavaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Computacion.RecCompu.htmlActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Computacion.RecCompu.CActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Computacion.RecCompu.CsharpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Computacion.RecCompu.CmasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Calidad.CalidadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Quimica.QuimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Recursos.Computacion.CompActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Settings.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Calendario.SemanalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Calendario.EventoEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Calendario.DiariamenteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MenuSlideActivity"
+            android:exported="false"
+            android:label="@string/title_activity_menu_slide"
+            android:theme="@style/Theme.Mabeth.NoActionBar" />
+        <activity
+            android:name=".Inicio.iniciara"
+            android:exported="false" />
+        <activity
+            android:name=".Registro.Registrarse3"
+            android:exported="false" />
+        <activity
+            android:name=".Registro.Registrarse2"
+            android:exported="false" />
+        <activity
+            android:name=".Registro.Registrarse"
+            android:exported="false" />
+        <activity
+            android:name=".Inicio.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IniciarSes.IniciarSes"
+            android:exported="false" />
+        <activity
+            android:name=".Inicio.splash_activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

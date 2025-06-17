@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/color3"
+    tools:context=".Inicio.MainActivity">
+
+    <Button
+        android:id="@+id/btnIniciarSes"
+        android:layout_width="270dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/balsamiqsans_normal"
+        android:onClick="IniciarSes"
+        android:text="Iniciar Sesión"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTell2" />
+
+    <Button
+        android:id="@+id/btnRegis"
+        android:layout_width="270dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_button22"
+        android:fontFamily="@font/balsamiqsans_normal"
+        android:onClick="Regis"
+        android:text="Registrarse"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSes"
+        app:strokeColor="#5751B1" />
+
+    <TextView
+        android:id="@+id/lblBienvenida"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/balsamiqsans_normal"
+        android:text="Asistente Mabeth"
+        android:textAlignment="center"
+        android:textColor="#5F6571"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblTell"
+        android:layout_width="313dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/balsamiqsans_normal"
+        android:text="Te damos la bienvenida a Asistente Mabeth"
+        android:textAlignment="center"
+        android:textColor="#5F6571"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+
+    <TextView
+        android:id="@+id/lblTell2"
+        android:layout_width="312dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/balsamiqsans_normal"
+        android:text="Gestionar y controlar tu vida estudiantil nunca fue tan difícil"
+        android:textAlignment="center"
+        android:textColor="#5F6571"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTell" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="145dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblBienvenida"
+        app:srcCompat="@drawable/hola5" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="118dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="58dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblBienvenida"
+        app:srcCompat="@drawable/oso" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

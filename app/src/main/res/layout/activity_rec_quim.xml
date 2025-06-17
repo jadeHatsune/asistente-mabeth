@@ -1,0 +1,422 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back39"
+    tools:context=".ui.Recursos.Computacion.CompActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="-30dp"
+                android:background="@drawable/color8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblCompres">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="83dp"
+                android:layout_height="102dp"
+                android:elevation="6dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes8"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes8"
+                app:layout_constraintStart_toEndOf="@+id/txtlblDatos"
+                app:layout_constraintTop_toTopOf="@+id/viewRes8"
+                app:srcCompat="@drawable/farmaco" />
+
+            <TextView
+                android:id="@+id/txtlblDatos"
+                android:layout_width="218dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="42dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Farmacopea"
+                android:textAlignment="center"
+                android:textColor="#E2F4EE"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRes8"
+                app:layout_constraintTop_toTopOf="@+id/viewRes8" />
+
+            <View
+                android:id="@+id/viewRes8"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/back12"
+                android:elevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewRes9" />
+
+            <TextView
+                android:id="@+id/lblTitulorescomp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/supercellmagicwebfont"
+                android:text="QUÍMICA"
+                android:textAlignment="center"
+                android:textColor="#F5E7E0"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/viewRes9"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/back7"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewRes7" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="83dp"
+                android:layout_height="102dp"
+                android:elevation="7dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes9"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes9"
+                app:layout_constraintStart_toEndOf="@+id/txtlblControl"
+                app:layout_constraintTop_toTopOf="@+id/viewRes9"
+                app:srcCompat="@drawable/enciclopedia" />
+
+            <TextView
+                android:id="@+id/txtlblControl"
+                android:layout_width="177dp"
+                android:layout_height="106dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Codex Alimentarius"
+                android:textAlignment="center"
+                android:textColor="#435451"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes9"
+                app:layout_constraintStart_toStartOf="@+id/viewRes9"
+                app:layout_constraintTop_toTopOf="@+id/viewRes9" />
+
+            <TextView
+                android:id="@+id/lblCompres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Introducción a la química"
+                android:textAlignment="center"
+                android:textColor="#F5E7E0"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblTitulorescomp" />
+
+
+            <View
+                android:id="@+id/viewRes7"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/back5"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewRes6" />
+
+            <TextView
+                android:id="@+id/txtlblcsharp"
+                android:layout_width="195dp"
+                android:layout_height="89dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Food and Drug Administration"
+                android:textAlignment="center"
+                android:textColor="#435447"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes7"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes7"
+                app:layout_constraintStart_toEndOf="@+id/txtlblcsharp2"
+                app:layout_constraintTop_toTopOf="@+id/viewRes7" />
+
+            <TextView
+                android:id="@+id/txtlblcsharp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="36dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="FDA"
+                android:textAlignment="center"
+                android:textColor="#435447"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRes7"
+                app:layout_constraintTop_toTopOf="@+id/viewRes7" />
+
+            <View
+                android:id="@+id/viewRes6"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/custom_button7"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewRes5" />
+
+            <TextView
+                android:id="@+id/txtlbljava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="36dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="NOM"
+                android:textAlignment="center"
+                android:textColor="#ECEBF3"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRes6"
+                app:layout_constraintTop_toTopOf="@+id/viewRes6" />
+
+            <TextView
+                android:id="@+id/txtlbljava2"
+                android:layout_width="195dp"
+                android:layout_height="89dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Normas oficiales Mexicanas"
+                android:textAlignment="center"
+                android:textColor="#ECEBF3"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes6"
+                app:layout_constraintTop_toTopOf="@+id/viewRes6" />
+
+            <View
+                android:id="@+id/viewRes5"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/custom_button10"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewRes3" />
+
+            <TextView
+                android:id="@+id/txtlblcss2"
+                android:layout_width="195dp"
+                android:layout_height="89dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="La tabla periódica de los elementos"
+                android:textAlignment="center"
+                android:textColor="#434056"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes5"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes5"
+                app:layout_constraintStart_toEndOf="@+id/txtlblcss"
+                app:layout_constraintTop_toTopOf="@+id/viewRes5" />
+
+            <TextView
+                android:id="@+id/txtlblcss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="36dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="TPE"
+                android:textAlignment="center"
+                android:textColor="#434056"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRes5"
+                app:layout_constraintTop_toTopOf="@+id/viewRes5" />
+
+            <View
+                android:id="@+id/viewRes3"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/custom_button2"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewRes2" />
+
+            <TextView
+                android:id="@+id/txtlblhtml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="36dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="QuiI"
+                android:textAlignment="center"
+                android:textColor="#E0F1E6"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRes3"
+                app:layout_constraintTop_toTopOf="@+id/viewRes3" />
+
+            <TextView
+                android:id="@+id/txtlblhtml2"
+                android:layout_width="182dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="48dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Química Industrial"
+                android:textAlignment="center"
+                android:textColor="#E0F1E6"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes3"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes3"
+                app:layout_constraintStart_toEndOf="@+id/txtlblhtml"
+                app:layout_constraintTop_toTopOf="@+id/viewRes3" />
+
+            <View
+                android:id="@+id/viewRes2"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/custom_button14"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewRes1" />
+
+            <TextView
+                android:id="@+id/txtlblC2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="36dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="QuiA"
+                android:textAlignment="center"
+                android:textColor="#835D32"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRes2"
+                app:layout_constraintTop_toTopOf="@+id/viewRes2" />
+
+            <TextView
+                android:id="@+id/txtlblC3"
+                android:layout_width="195dp"
+                android:layout_height="89dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Química en Alimentos"
+                android:textAlignment="center"
+                android:textColor="#835D32"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes2"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes2"
+                app:layout_constraintHorizontal_bias="0.759"
+                app:layout_constraintStart_toEndOf="@+id/txtlblC2"
+                app:layout_constraintTop_toTopOf="@+id/viewRes2"
+                app:layout_constraintVertical_bias="0.727" />
+
+            <View
+                android:id="@+id/viewRes1"
+                android:layout_width="346dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/custom_button18"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblCompres" />
+
+            <TextView
+                android:id="@+id/txtlblC1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="36dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="QuF"
+                android:textAlignment="center"
+                android:textColor="#F3E5E1"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewRes1"
+                app:layout_constraintTop_toTopOf="@+id/viewRes1" />
+
+            <TextView
+                android:id="@+id/txtlblCmas"
+                android:layout_width="195dp"
+                android:layout_height="89dp"
+                android:layout_marginTop="24dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Química en Fármacos"
+                android:textAlignment="center"
+                android:textColor="#F3E5E1"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewRes1"
+                app:layout_constraintEnd_toEndOf="@+id/viewRes1"
+                app:layout_constraintStart_toEndOf="@+id/txtlblC1"
+                app:layout_constraintTop_toTopOf="@+id/viewRes1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

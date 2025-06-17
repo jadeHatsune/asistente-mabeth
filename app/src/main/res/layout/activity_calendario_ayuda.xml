@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor8"
+    android:orientation="vertical"
+    tools:context=".ayuda.CalendarioAyudaActivity">
+
+    <ScrollView
+        android:id="@+id/scrollViewCall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgCalendarSet"
+            android:layout_width="250dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:elevation="12dp"
+            android:src="@drawable/calendarionave"
+            android:textStyle="bold"
+            app:backgroundTint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutsettings"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollViewCall"
+        android:background="@drawable/back52"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/textViewSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:fontFamily="@font/rajdhanibold"
+            android:text="Navegación de calendario"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/layoutsettings" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSettings">
+
+            <TextView
+                android:id="@+id/textViewSettingsActi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:gravity="left"
+                android:text="¿Es nuevo en navegar en nuestro calendario? Entonces permítanos darle un nuevo recorrido. \nAbra Calendario y podrá navegar sobre los meses por medio de las flechas."
+                android:textColor="#716F76"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSettings" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSettingsActi2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:gravity="left"
+                android:text="Diario:"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="15dp"
+                />
+
+                <TextView
+                    android:id="@+id/textViewSettingsActi3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:fontFamily="@font/balsamiqsans_normal"
+                    android:gravity="left"
+                    android:layout_marginEnd="16dp"
+                    android:text="Para ingresar al modo diario, debe de dar click con su dedo a cualquier día del mes."
+                    android:textColor="#716F76"
+                    android:textSize="15dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewSettingsActi4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:gravity="left"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Deslice el dedo en la lista de las horas para poder ver tus eventos según el horario. \nPuede cambiar de día respectivamente en el mes indicado por medio de las flechas de la parte superior derecha."
+                android:textColor="#716F76"
+                android:textSize="15dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewSettingsActi5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/balsamiqsans_normal"
+                    android:gravity="left"
+                    android:text="Crear Evento:"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewSettingsActi6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:fontFamily="@font/balsamiqsans_normal"
+                    android:gravity="left"
+                    android:layout_marginEnd="16dp"
+                    android:text="Puedes crear un evento desde el modo diario o desde el modo semanario simplemente dando click con su dedo en Crear Evento."
+                    android:textColor="#716F76"
+                    android:textSize="15dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewSettingsActi7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/balsamiqsans_normal"
+                    android:gravity="left"
+                    android:text="Semanario:"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewSettingsActi8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:fontFamily="@font/balsamiqsans_normal"
+                    android:gravity="left"
+                    android:layout_marginEnd="16dp"
+                    android:text="Puede cambiar al modo semanario dando click con el dedo sobre Semana."
+                    android:textColor="#716F76"
+                    android:textSize="15dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewSettingsActi9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:gravity="left"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Puede continuar dando click en Seguir Leyendo."
+                android:textColor="#716F76"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewSettingsSig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rajdhanibold"
+                android:textAlignment="viewEnd"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:text="Seguir Leyendo"
+                android:textColor="#3B43E5"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewSetRegresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rajdhanibold"
+                android:textAlignment="viewEnd"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="18dp"
+                android:text="Regresar al Menú"
+                android:textColor="#3B43E5"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

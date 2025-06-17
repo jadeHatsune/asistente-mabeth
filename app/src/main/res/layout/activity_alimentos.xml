@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back45"
+    tools:context=".ui.Recursos.Quimica.RecQuim.AlimentosActivity">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginBottom="-80dp"
+                android:background="@drawable/color8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="217dp"
+                android:layout_height="79dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Ciencia que estudia los alimentos, sus envases, el medio y el organismo del consumidor."
+                android:textAlignment="center"
+                android:textColor="#284932"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/view18"
+                app:layout_constraintEnd_toStartOf="@+id/animPrinci2"
+                app:layout_constraintStart_toStartOf="@+id/view18"
+                app:layout_constraintTop_toBottomOf="@+id/viewResComp1" />
+
+            <View
+                android:id="@+id/view18"
+                android:layout_width="383dp"
+                android:layout_height="127dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/custom_button11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewResComp1" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animPrinci30"
+                android:layout_width="144dp"
+                android:layout_height="123dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/view18"
+                app:layout_constraintTop_toTopOf="@+id/view18"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+
+            <TextView
+                android:id="@+id/txtTextoDiferencia"
+                android:layout_width="352dp"
+                android:layout_height="184dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Aroma y sabor. Estas dependen de la composición del alimento de la presencia de sustancias ácidas, salinas o volátiles. El aroma y sabor se encuentran influenciados por otras propiedades como la temperatura o el estado de agregación del alimento."
+                android:textAlignment="center"
+                android:textColor="#284932"
+                android:textSize="19dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResComp"
+                app:layout_constraintEnd_toEndOf="@+id/viewResComp"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp"
+                app:layout_constraintTop_toBottomOf="@+id/txtTituloDiferencia" />
+
+            <TextView
+                android:id="@+id/txtTituloDiferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="La química en los alimentos"
+                android:textAlignment="center"
+                android:textColor="#284932"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp"
+                app:layout_constraintTop_toTopOf="@+id/viewResComp" />
+
+            <View
+                android:id="@+id/viewResComp"
+                android:layout_width="390dp"
+                android:layout_height="245dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/custom_button11"
+                android:elevation="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewResComp5" />
+
+            <TextView
+                android:id="@+id/txtTextoPor"
+                android:layout_width="342dp"
+                android:layout_height="371dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Los aditivos alimentarios son sustancias químicas que pueden ser tanto de origen natural como artificial y que cuando son añadidas intencionalmente a los alimentos es con el objetivo de realizar alguna función tecnológica.Por ejemplo, el ácido cítrico (E330) y el ácido ascórbico (E300) son químicos naturalmente presentes en alimentos como el limón y la naranja, el segundo, además, es un nutriente (la vitamina C), pero añadidos intencionadamente en un alimento que sirven para conservarlo mejor."
+                android:textAlignment="center"
+                android:textColor="#284932"
+                android:textSize="19dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResComp5"
+                app:layout_constraintEnd_toEndOf="@+id/viewResComp5"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp5"
+                app:layout_constraintTop_toTopOf="@+id/viewResComp5" />
+
+            <View
+                android:id="@+id/viewResComp5"
+                android:layout_width="390dp"
+                android:layout_height="430dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/custom_button11"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewResComp2" />
+
+            <TextView
+                android:id="@+id/txtTextoPor3"
+                android:layout_width="355dp"
+                android:layout_height="235dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="La química de los alimentos es un ámbito del conocimiento que estudia el detalle de las sustancias químicas que forman parte de los productos alimenticios ya sea por su composición original, por los ingredientes añadidos o por los procesos de preparación o producción que se dan en ellos."
+                android:textAlignment="center"
+                android:textColor="#284932"
+                android:textSize="19dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResComp2"
+                app:layout_constraintEnd_toEndOf="@+id/viewResComp2"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp2"
+                app:layout_constraintTop_toBottomOf="@+id/txtTituloPor" />
+
+
+            <View
+                android:id="@+id/viewResComp2"
+                android:layout_width="383dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/custom_button11"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view18" />
+
+            <TextView
+                android:id="@+id/txtTituloPor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Química en los alimentos"
+                android:textAlignment="center"
+                android:textColor="#284932"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp2"
+                app:layout_constraintTop_toTopOf="@+id/viewResComp2" />
+
+            <TextView
+                android:id="@+id/txtTextoQue"
+                android:layout_width="357dp"
+                android:layout_height="223dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="En Química de Alimentos se aplican conocimientos de química y biología al desarrollo, optimización y control de productos alimenticios, desde la materia prima hasta el producto almacenado, incluyendo su comercialización."
+                android:textAlignment="center"
+                android:textColor="#284932"
+                android:textSize="21dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResComp1"
+                app:layout_constraintEnd_toEndOf="@+id/viewResComp1"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp1"
+                app:layout_constraintTop_toBottomOf="@+id/txtTituloQue" />
+
+            <TextView
+                android:id="@+id/txtTituloQue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:elevation="7dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="¿Qué es?"
+                android:textAlignment="center"
+                android:textColor="#284932"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/viewResComp1"
+                app:layout_constraintTop_toTopOf="@+id/viewResComp1" />
+
+            <View
+                android:id="@+id/viewResComp1"
+                android:layout_width="383dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/custom_button11"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewResVolver" />
+
+            <TextView
+                android:id="@+id/lblCompres"
+                android:layout_width="184dp"
+                android:layout_height="97dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Química de los alimentos"
+                android:textAlignment="center"
+                android:textColor="#E0F1E5"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/viewResVolver"
+                android:layout_width="164dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/back46"
+                android:elevation="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout3" />
+
+            <TextView
+                android:id="@+id/txtlblC1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="46dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/balsamiqsans_normal"
+                android:text="Volver"
+                android:textAlignment="center"
+                android:textColor="#E8F5EC"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResVolver"
+                app:layout_constraintEnd_toEndOf="@+id/viewResVolver"
+                app:layout_constraintStart_toEndOf="@+id/imageView7"
+                app:layout_constraintTop_toTopOf="@+id/viewResVolver" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="41dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="7dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewResVolver"
+                app:layout_constraintStart_toStartOf="@+id/viewResVolver"
+                app:layout_constraintTop_toTopOf="@+id/viewResVolver"
+                app:layout_constraintVertical_bias="0.6"
+                app:srcCompat="@drawable/izquier" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="160dp"
+                android:layout_height="136dp"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/lblCompres"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/donacionali" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

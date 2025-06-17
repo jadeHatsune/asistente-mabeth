@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="opciones">
+        <item>Educación media</item>
+        <item>Educación media superior</item>
+        <item>Educación superior</item>
+    </string-array>
+
+    <string-array name="temas">
+        <item>Programación</item>
+        <item>Electrónica</item>
+        <item>Química</item>
+        <item>Calidad</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="filtroAct">
+        <item>Todos</item>
+        <item>Completados</item>
+        <item>Sin completar</item>
+        <item>Expirados</item>
+        <item>Sin expirar</item>
+    </string-array>
+
+    <string-array name="filtroActCol">
+        <item>Todos</item>
+        <item>Morado</item>
+        <item>Púrpura</item>
+        <item>Negro</item>
+        <item>Azul</item>
+        <item>Rojo</item>
+    </string-array>
+
+    <string-array name="filtroTemas">
+        <item>Todos</item>
+        <item>Programación</item>
+        <item>Electrónica</item>
+        <item>Química</item>
+        <item>Calidad</item>
+        <item>Otro</item>
+    </string-array>
+
+
+
+</resources>
